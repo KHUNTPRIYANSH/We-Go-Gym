@@ -1,0 +1,29 @@
+#cont-sec .ttd{
+background: #fff;
+color: #191919;
+display: flex;
+align-items: center;
+gap: 7vw;
+border-top: 1px solid rgba(53, 53, 53, 0.125);
+justify-content: center;
+}
+#cont-sec .ttd > *{
+    min-width: 300px; 
+     /* background: gold; */
+}
+#cont-sec .ttd .co-info .m-title{
+    font-size: 1.2rem;
+    font-family: var(--font8);
+}
+#cont-sec .ttd .co-info .s-title{
+    font-size: 1.35rem;
+}
+#cont-sec #cor-a{
+    right: -100px;
+    top: 53.5%;
+}
+#con-frm{
+    background: #191919;
+    color: white;
+    
+}

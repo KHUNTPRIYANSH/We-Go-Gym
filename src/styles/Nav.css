@@ -1,0 +1,151 @@
+header {
+  width: 100vw;
+  height: auto;
+  min-height: 80px;
+  background-color: rgb(247, 247, 247);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 11111;
+  /* position: relative; */
+  justify-content: center;
+  box-shadow: 0 0 30px 1px #1919193b;
+  /* border-bottom: 5px solid crimson; */
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 5vw;
+  z-index: 111;
+}
+
+.links a {
+  color: #121212;
+  text-decoration: none;
+  font-size: 1.15rem;
+  display: inline-block;
+  font-weight: 600;
+  transition: ease-in-out 0.45s;
+  position: relative;
+  /* border-bottom: 5px solid rgba(0, 0, 0, 0); */
+}
+
+header nav .links a::after {
+  content: '';
+  width: 0% !important;
+  margin: auto;
+  display: block;
+
+  transform: skew(-45deg);
+  height: 4.5px;
+  margin: auto !important;
+  background-color: rgba(24, 24, 24, 0);
+  transition: all 0.45s !important;
+
+}
+
+header nav .links a:hover::after {
+  content: '';
+
+  margin: auto;
+  width: 100% !important;
+  background-color: #121212;
+  transition: all 0.5s !important;
+}
+
+/* .links a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+} */
+/* .links a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+} */
+.links {
+
+  /* flex: 1; */
+  display: flex;
+  gap: 35px;
+}
+
+.nv-btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#fp {
+  padding: 0 15px;
+  width: 70px;
+  line-height: 17px !important;
+  border-left: 2px solid rgba(177, 176, 176, 0.389);
+  border-right: 2px solid rgba(177, 176, 176, 0.389);
+}
+
+#row {
+  display: flex;
+  align-items: center;
+}
+
+#arrow {
+  color: var(--green) !important;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 7.5px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.nv-btns a {
+  color: #121212;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+#togg {
+  display: none;
+
+}
+
+#togg img {
+  height: 40px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+
+}
+
+[isActive="false"] #togg img {
+  transform: rotate(-45deg) !important;
+}
+
+#hid-nv {
+  display: flex;
+  background-color: rgb(247, 247, 247);
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  position: absolute;
+  top: -500px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  z-index: 1;
+  padding-bottom: 40px;
+}
+
+#hid-nv .links {
+  align-items: center;
+  grid-area: 5px;
+  flex-direction: column;
+}

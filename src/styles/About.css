@@ -1,0 +1,159 @@
+.ab-scr {
+    width: 100%;
+    height: 60vh;
+    min-height: 40vh;
+    background:
+        linear-gradient(to right, #280171f5, #9f10bc7e, #9211495f, #0000, #00009992), url('../../public/imgs/ab-back.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.ab-cds {
+    width: 100%;
+    height: auto;
+    padding: 10vh 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.ab-cds .acd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.ab-cds .acd:last-child {
+    flex-direction: row-reverse;
+}
+
+.ab-cds .acd>* {
+    width: 50%;
+}
+
+.ab-cds .acd .acd-r {
+    /* width: 100%; */
+}
+
+.ab-cds .acd .acd-r img {
+    width: 100%;
+}
+
+.ab-cds .acd .acd-l {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 50px;
+}
+
+.ab-cds .acd .acd-l p {
+    font-family: var(--font6);
+    font-size: 1.2rem;
+}
+
+#the-gym {
+    width: 100%;
+    background: #191919;
+    padding: 10vh 10vw;
+}
+
+#the-gym .t-title {
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+
+#the-gym main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 25px 25px;
+    height: 70vh;
+    /* border: 5px solid crimson; */
+    overflow: hidden;
+}
+
+#the-gym main .lf img {
+    height: 130%;
+}
+
+#the-gym main .lf {
+    flex: 0.55;
+}
+
+#the-gym main .md,
+#the-gym main .ri {
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+    overflow: hidden;
+
+    /* border: 5px solid gold; */
+}
+
+#the-gym main .ri {
+    flex: 0.21;
+}
+
+#the-gym main .lf img,
+#the-gym main .md img,
+#the-gym main .ri img {
+    width: 100%;
+
+}
+
+#the-gym main .md img,
+#the-gym main .ri img {
+    width: 130%;
+}
+
+.custom-shape-divider-top-1679208377 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1679208377 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1679208377 .shape-fill {
+    fill: #191919;
+}
+
+.custom-shape-divider-bottom-1679208197 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679208197 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1679208197 .shape-fill {
+    fill: #FFFFFF;
+}

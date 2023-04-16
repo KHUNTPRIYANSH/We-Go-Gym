@@ -1,0 +1,70 @@
+#shop-sec{
+    width: 100%;
+    height: auto;
+}
+#ad1{
+    /* background: crimson; */
+    padding: 15vh 10vw;
+    height: auto;
+    width: 100%;
+    padding-bottom: 10vh;
+    position: relative;
+}
+#ad1 img{
+    width: 100%;
+}
+#ad1 #ad-data{
+    position: absolute;
+    top: 27vh;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 25px;
+    left: 17.5vw;
+}
+#ad-data .t-title{
+    font-size: 4.5rem !important;
+}
+#shop-btn{
+    display: flex;
+    align-items: center;
+    padding: 9px 35px;
+    background: var(--green);
+    gap: 17.5px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font8);
+    width: fit-content !important;
+}#shop-btn img{
+    height: 60px;
+    width: 60px;
+}
+#ad2{
+    margin-top: -10vh;
+}
+#xyz{
+    position: relative;
+    height: 25vh;
+    background: #ffffff;
+}
+.custom-shape-divider-bottom-1679121643 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  /* background: red; */
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1679121643 svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 99px;
+  /* color: red; */
+}
+
+#xyz .custom-shape-divider-bottom-1679121643 .shape-fill {
+  fill: #191919;
+}
