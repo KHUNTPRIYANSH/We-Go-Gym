@@ -2,8 +2,8 @@ header {
   width: 100vw;
   height: auto;
   min-height: 80px;
-  /* background-color: rgb(247, 247, 247); */
-  background-color: pink;
+  background-color: rgb(247, 247, 247);
+  /* background-color: pink; */
 
   display: flex;
   align-items: center;
