@@ -1,8 +1,18 @@
-import React, { Children, useEffect, useState } from "react";
+import React, { Children, useEffect, useState, useContext } from "react";
 import "../styles/Nav.css";
+import Badge from "@mui/material/Badge";
+import { CartContext } from "../Providers/CartContext";
+import { CtVis } from "../Providers/CartVisibility";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 export const Nav = () => {
+  const cttog = useContext(CtVis);
+  const cartCount = useContext(CartContext);
+  const handleCartBtn = () => {
+    console.log("crt button status : ", cttog.ctStatus);
+    if (cttog.ctStatus === 0) cttog.setctStatus(1);
+    if (cttog.ctStatus === 1) cttog.setctStatus(0);
+  };
   const [toggle, setToggle] = useState(false);
   // const [btn, setBtn] = useState(false);
   let btn;
@@ -74,8 +84,15 @@ export const Nav = () => {
           <Link to="/" id="fp">
             FREE PASS
           </Link>
-          <Link to="/">
-            <ShoppingCartIcon />
+
+          <Link to="/" onClick={handleCartBtn}>
+            <Badge
+              color="secondary"
+              badgeContent={cartCount.cartProduct.length}
+              showZero
+            >
+              <ShoppingCartIcon />
+            </Badge>
           </Link>
         </div>
         <div id="togg" onClick={handleToggle} isActive={btn}>

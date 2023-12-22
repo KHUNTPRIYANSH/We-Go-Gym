@@ -13,6 +13,7 @@ import Mship from "./pages/About/Mship";
 import Blog from "./pages/About/Blog";
 import Shop from "./pages/Shop/Shop";
 import Contact from "./pages/contact/Contact";
+import { CtVisProvider } from "./Providers/CartVisibility";
 import { CartProvider } from "./Providers/CartContext";
 // import Scroll2Top from "./components/Scroll2Top";
 const App = () => {
@@ -21,8 +22,10 @@ const App = () => {
       <CartProvider>
         <Router>
           {/* <Scroll2Top> */}
-          <Nav />
-          <Cart />
+          <CtVisProvider>
+            <Nav />
+            <Cart />
+          </CtVisProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
