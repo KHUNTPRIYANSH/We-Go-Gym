@@ -5,8 +5,8 @@ const Gal = () => {
     <>
       <div className="ins-flw">
         Follow
-        <a className="green" href="/">
-          @Priyansh_KPD
+        <a className="green" href="https://www.instagram.com/_qubit.tech/">
+          @_qubit.tech
         </a>
       </div>
       <div id="gallery">

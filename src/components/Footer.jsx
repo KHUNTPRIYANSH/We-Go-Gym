@@ -18,8 +18,8 @@ const footer = () => {
             />
           </div>
           <div className="loc">
-            F7 club, Rajkot, Gujarat, India -360004
-            <br /> +91 98765 54321
+            QUBIT, Rajkot, Gujarat, India -360004
+            <br /> +91 94092 59856
           </div>
           <div className="tm">
             Every day: 9:00 – 22:00 <br /> Sat – Sun: 8:00 – 21:00
@@ -63,9 +63,10 @@ const footer = () => {
           </Link>
         </div>
         <div className="policy">
-          <span>
-            Copyright © KPD &nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;
-            &nbsp; Terms & Conditions
+          <span style={{ display: "flex", alignItems: "center" }}>
+            Copyright © &nbsp; <img src="./imgs/fv.png" height="30px" alt="" />
+            QUBIT &nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp; &nbsp; Terms &
+            Conditions
           </span>
         </div>
       </div>

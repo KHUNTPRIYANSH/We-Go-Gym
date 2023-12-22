@@ -1,0 +1,109 @@
+#cart-sec {
+    height: 100dvh;
+    width: max(30%, 370px);
+    color: #252525;
+    position: fixed;
+    background: #fff;
+    right: 0;
+    z-index: 111111;
+    display: flex;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.151);
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 35px;
+}
+
+#cart-hdr,
+#cart-hdr>* {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cart-hdr big,
+#cart-hdr #crt-hd-r>*>* {
+    color: #121212;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+
+#cart-hdr #crt-hd-l small {
+    margin-left: 7.5px;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+
+}
+
+.tot {
+    display: flex;
+    margin: 25px 0;
+    padding: 15px;
+    border-top: 0.5px solid rgba(57, 57, 57, 0.257);
+    border-bottom: 0.5px solid rgba(57, 57, 57, 0.257);
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.g-btn {
+    /* width: fit-content; */
+    /* min-width: 200px; */
+    color: #191919;
+    border: none;
+    /* border: 2px solid transparent; */
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--font5);
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    transition: 0.25s;
+    background-color: var(--green);
+    padding: 15px 35px;
+}
+
+.g-btn:hover {
+    background: var(--green-2);
+
+    /* border-color: var(--green); */
+}
+
+#cart-body {
+    flex: 1;
+    padding-right: 15px;
+    /* background: gold; */
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#ct-pp {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+
+    /* align-items: ; */
+}
+
+.ct-pp-1>* {
+    height: 90px;
+}
+
+.ct-pp-2 {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ct-pp-3 {
+    /* background: red; */
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
