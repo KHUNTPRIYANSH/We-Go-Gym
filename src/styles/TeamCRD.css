@@ -198,3 +198,11 @@ margin-top: 0vh !important;
     }
 
 }
+@media (width < 700px) {
+    .ab-scr {
+        background-size: 150%;
+        background-position: right center;
+        background-attachment: scroll;
+        height: 100vw;
+    }
+}
