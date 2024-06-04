@@ -26,7 +26,7 @@ const Contact = () => {
           <img src="./imgs/3.png" alt="" />
         </div>
       </div>
-      <div id="con-frm">
+      {/* <div id="con-frm">
         <form action="">
           <div id="fm-title">Send us a message:</div>
           <div id="fm-r1">
@@ -40,7 +40,7 @@ const Contact = () => {
             Join Now
           </div>
         </form>
-      </div>
+      </div> */}
       <div></div>
       <iframe
         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=22.30416898352206,%2070.80021655568423+(rajkot)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
